@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: RobotoCondensed-Regular;
+  src: url("../fonts/RobotoCondensed-Regular.eot?") format("eot"), url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: RobotoCondensed-Bold;
+  src: url("../fonts/RobotoCondensed-Bold.woff?") format("eot"), url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"); }
+
+* {
+  box-sizing: border-box;
+  transition: .25s; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background: #101010;
+  color: #f9fafc;
+  font-size: 1rem;
+  font-family: RobotoCondensed-Regular; }
+
+a {
+  color: #f9fafc;
+  text-decoration: none; }
+  a:hover {
+    color: #000;
+    text-decoration: none; }
+
+.topLine {
+  display: flex;
+  position: fixed;
+  border-bottom: 3px solid #353638;
+  width: 100%;
+  background: #0d0d0d;
+  z-index: 10000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  height: 3.75rem;
+  font-family: RobotoCondensed-Bold; }
+  .topLine:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.menu {
+  height: 3.75rem;
+  margin: 0 auto;
+  padding-top: .3rem;
+  text-transform: uppercase; }
+  .menu:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .menu a {
+    display: block;
+    height: 100%;
+    background: #212121;
+    /* border-left: 1px solid #353638; */
+    border: 2px solid #353638;
+    padding: 0 1rem;
+    margin-left: 2px; }
+    .menu a:hover {
+      /* background:  #1c61c8; */
+      background: radial-gradient(circle farthest-side at top, #21baf3, #1c61c8);
+      border: 2px solid #59deed; }
+  .menu li {
+    display: block;
+    padding: 0;
+    float: left;
+    line-height: 3rem;
+    width: 100%/5; }
+    .menu li:first-of-type a {
+      padding-left: 2rem;
+      position: relative;
+      z-index: 0; }
+      .menu li:first-of-type a:before, .menu li:first-of-type a:after {
+        position: absolute;
+        display: block;
+        content: ' ';
+        width: 0;
+        height: 0;
+        border: .9rem solid transparent; }
+      .menu li:first-of-type a:before {
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        border-top: .9rem solid #353638;
+        border-left: .9rem solid #353638; }
+      .menu li:first-of-type a:hover:before {
+        border-top: .9rem solid #59deed;
+        border-left: .9rem solid #59deed; }
+      .menu li:first-of-type a:after {
+        top: -3px;
+        left: -3px;
+        z-index: 20;
+        border-top: .9rem solid #0d0d0d;
+        border-left: .9rem solid #0d0d0d; }
+    .menu li:last-of-type a {
+      position: relative;
+      padding-right: 2rem;
+      z-index: 0; }
+      .menu li:last-of-type a:before, .menu li:last-of-type a:after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        border: .9rem solid transparent; }
+      .menu li:last-of-type a:before {
+        top: 0px;
+        right: 0px;
+        z-index: 2;
+        border-top: .9rem solid #353638;
+        border-right: .9rem solid #353638; }
+      .menu li:last-of-type a:hover:before {
+        border-top: .9rem solid #59deed;
+        border-right: .9rem solid #59deed; }
+      .menu li:last-of-type a:after {
+        top: -3px;
+        right: -3px;
+        z-index: 3;
+        border-top: .91rem solid #0d0d0d;
+        border-right: .91rem solid #0d0d0d; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.indexTop {
+  width: 100%;
+  height: 650px;
+  background: #111 url("../img/20208_sblB1UNrTR_mwo_gdc12_026.png") center center no-repeat;
+  background-size: cover;
+  padding-top: 6rem; }
+  .indexTop:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.indexTopLeft {
+  width: 70%;
+  float: left;
+  text-shadow: 0 0 5px #000;
+  text-align: center; }
+  .indexTopLeft h1 {
+    font-size: 3rem;
+    font-family: RobotoCondensed-Bold;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border: 1px solid #bbb;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6); }
+  .indexTopLeft .btn {
+    background: #2a71db;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: RobotoCondensed-Bold;
+    padding: 1rem;
+    box-shadow: 0 1px 15px #000;
+    margin: 0 auto;
+    margin-top: 3rem; }
+    .indexTopLeft .btn:hover {
+      background-color: rgba(255, 65, 54, 0.2);
+      cursor: pointer; }
+  .indexTopLeft .red {
+    background: #ad7601; }
+
+.indexTopRight {
+  width: 30%;
+  float: right;
+  box-shadow: 0 1px 20px #000; }
+
+.application-form {
+  display: none;
+  padding: 3rem;
+  background: #0d0d0d;
+  border: 2px solid #353638;
+  position: fixed;
+  top: 5rem;
+  right: 10rem;
+  z-index: 100;
+  box-shadow: 0 1px 20px #000; }
+  .application-form:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .application-form form {
+    margin: 0 auto;
+    display: inline-block;
+    clear: right; }
+  .application-form p {
+    margin-top: 1rem; }
+
+.show {
+  display: inline-block; }
+
+.close {
+  float: right;
+  color: #FF4136;
+  cursor: pointer; }
+
+.tooltip {
+  display: inline-block;
+  padding: 1rem;
+  background: #fff;
+  color: #111;
+  box-shadow: 0 1px 20px #000;
+  position: absolute;
+  z-index: 100000; }

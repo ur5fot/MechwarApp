@@ -1,0 +1,19 @@
+{
+  "name": "default_Projects_gulp",
+  "version": "0.0.0",
+  "authors": [
+    "ur5fot <wagvpered@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
